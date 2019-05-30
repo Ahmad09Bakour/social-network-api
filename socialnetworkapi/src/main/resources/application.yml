@@ -7,15 +7,15 @@
 #But we need to do some changes to the code as we changed the name of the file as follows:
 
 spring:
-jpa:
-hibernate.ddl-auto: create
-generate-ddl: true
-database-platform: org.hibernate.dialect.MySQL57Dialect
-datasource:
-url: jdbc:mysql://localhost:3306/social-network?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-username: social-network-admin
-password: abcd123
+  jpa:
+    hibernate.ddl-auto: create
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/social-network?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: social-network-admin
+    password: abcd123
 
 # by default the port of this app was 8080, to change it we add what follows:
 server:
-port: 8086
+  port: 8086
