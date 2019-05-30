@@ -4,20 +4,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class User {
+public class PostActivity {
 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Id
     private long id;
 
     @NotNull
-    private String name;
+    @Min(0)
+    private String title;
 
+    @Min(0)
     @NotNull
-    private String selfBackground;
+    private String description;
 
     public long getId() {
         return id;
@@ -27,28 +30,28 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getSelfBackground() {
-        return selfBackground;
+    public String getDescription() {
+        return description;
     }
 
-    public void setSelfBackground(String selfBackground) {
-        this.selfBackground = selfBackground;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "PostActivity{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", selfBackground='" + selfBackground + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 }

@@ -1,4 +1,4 @@
-package org.fasttrackit.socialnetworkapi.transfer;
+package org.fasttrackit.socialnetworkapi.transfer.user;
 
 import javax.validation.constraints.NotNull;
 

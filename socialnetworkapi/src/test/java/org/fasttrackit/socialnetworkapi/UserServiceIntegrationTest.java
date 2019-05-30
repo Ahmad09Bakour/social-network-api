@@ -2,7 +2,7 @@ package org.fasttrackit.socialnetworkapi;
 
 import org.fasttrackit.socialnetworkapi.domain.User;
 import org.fasttrackit.socialnetworkapi.service.UserService;
-import org.fasttrackit.socialnetworkapi.transfer.CreateUserRequest;
+import org.fasttrackit.socialnetworkapi.transfer.user.CreateUserRequest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
